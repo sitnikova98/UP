@@ -1,0 +1,11 @@
+commit 01aef578e3b501efcb9c2284cd713a8223233d1a
+Author: Sitnikova <crazy_train@tut.by>
+Date:   Sun Feb 12 23:41:18 2017 +0300
+
+    add status.txt
+
+commit f05e05c1f0e4b87fe588464d367bd0f15158c8c7
+Author: Sitnikova <crazy_train@tut.by>
+Date:   Sun Feb 12 23:39:31 2017 +0300
+
+    add .gitignore
