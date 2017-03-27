@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital_News</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class = "main-header">
+    <div class="logo">
+        <b><a href="#">Digital News</a></b>
+    </div>
+    <div class="user">
+        <br><b id="user-name"></b></br>
+        <button id="user-button-add">Добавить новость</button>
+        <button id="user-button-exit">Выйти</button>
+        <button id="user-button-signin">Войти</button>
+    </div>
+</div>
+<div class="signIn-page">
+        <div class="user-data">
+            <p>Имя:  <input type="text" size="30" id="user-signIn-name" value=""></p>
+            <p>Пароль: <input type="text" size="30" id="user-signIn-password"></p>
+
+            <button id="user-sign-in">Войти</button>
+        </div>
+</div>
+
+<div class = "add-edit-news-page">
+    <h3>Добавить/изменить новость</h3>
+    <div class = "add-edit-news-attributes">
+        <p>Заголовок(<100 символов):<br> <input type="text" size="94" id="add-edit-news-title" value=""></p>
+        <p><br>Краткое описание(<100 символов):<br> <textarea rows="1" cols="95" name="text" id="add-edit-news-summary" value=""></textarea></p>
+        <p>Содержание:<br> <textarea rows="10" cols="95" name="text" id="add-edit-news-content" value=""></textarea></p>
+    </div>
+    <button id="add-edit-news-button">Готово</button>
+</div>
+<div class="main-page">
+    <div class="main-content">
+        <div class="article-list"></div>
+
+        <div class="filter-bar">
+            <b><p>Поиск статьи</p></b>
+            <form name = "filter">
+                <div class="filter-data">Поиск по дате от: <input id ="begin-date" type="date" value=""/>
+                    до: <input id="end-date" type="date" value=""/></div>
+                <div class="filter-author">Поиск по автору:
+                    <select id="Authors">
+                        <option disabled>Автор</option>
+                        <option class = "options">Все</option>
+                    </select>
+                </div>
+            </form>
+
+            <p><button id="filter-button">Применить</button></p>
+        </div>
+        <div class="pagination-bar">
+            <button id="button-pagination">Показать еще</button>
+        </div>
+    </div>
+</div>
+
+
+<div class = "fullNews">
+    <div class = "title"></div>
+    <div class = "content"></div>
+    <div class="author-date"></div>
+</div>
+
+<div class="main-footer">
+    <div class="footer-content">
+        <a href="index.html" title="Portal" class = "portal-link"><p align="left">Digital News</p></a>
+        <div class="foot-info">
+            <p>Ситникова Александра |6 группа| fpm.sitnikov@bsu.by| 18.03.2017</p>
+        </div>
+    </div>
+</div>
+
+<template id="template-article-list-items">
+    <div class="article-list-items" data-id="id">
+        <h3 class="article-list-items-title">title</h3>
+        <p class="article-list-items-summary">summary</p>
+        <div class="article-list-items-info">
+            <span> Автор: <span class="article-list-items-author">Александра Ситникова</span></span>
+            <span> Опубликовано: <span class="article-list-items-createdAd">12.12.1995 04.03</span></span>
+        </div>
+        <div class="article-buttons">
+            <button class="show-article" >Показать полностью</button>
+            <button class = "edit-article">Редактировать новость</button>
+            <button class="delete-article">Удалить</button>
+        </div>
+
+    </div>
+</template>
+
+
+
+<script src="articles.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+
+body {
+    background-image: url("http://s019.radikal.ru/i615/1703/ea/0025344862b7.png");
+    color: rgba(39,15,19,0.82);
+    font-size: 85.5%;
+    font-family: Ebrima;
+    Line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(66,0,33,0.82);
+}
+.body {
+    margin: 0 auto;
+    height: 100%;
+}
+.main-header {
+    background-color: #666;
+    height: 110.75px;
+    width: 100%;
+    margin-top: 0%;
+    border-radius: 4px;
+}
+.logo {
+    text-align: left;
+    margin-top: 0%;
+    font-size: xx-large;
+    font-family: "Tahoma";
+}
+
+.logo a {
+    color: aliceblue;
+}
+
+.user {
+    text-align: right;
+}
+
+.user b {
+    color: aliceblue;
+}
+
+.article-list {
+    float: left;
+    width: 60%;
+    height: 40%;
+}
+
+.article-list-items {
+    margin-left: 1%;
+    margin-top: 2%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid rgba(173,193,197,0.85);
+
+}
+
+.article-buttons button {
+    margin-left: 0.15%;
+}
+
+.filter-bar {
+    background-color: aliceblue;
+    border: 1px solid rgba(173,193,197,0.85);
+    border-radius: 2px;
+    width: 35%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 3%;
+    float: left;
+}
+
+.filter-bar button {
+    text-align: center;
+    margin-left: 2%;
+}
+
+.filter-bar b {
+    text-align: center;
+}
+
+
+.pagination-bar {
+    float: left;
+    margin-top: 1%;
+    margin-left: 20%;
+    clear: both;
+}
+
+.signIn-page {
+    background: aliceblue;
+    width: 30%;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px solid rgba(173,193,197,0.85);
+    border-radius: 2px;
+    display: none;
+}
+
+.signIn-page button {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.signIn-page p {
+    margin-left: 3%;
+}
+
+.user-data {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.add-edit-news-page {
+    width: 80%;
+    background-color: aliceblue;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 5%;
+    border: 1px solid rgba(173,193,197,0.85);
+    border-radius: 2px;
+    display: none;
+
+}
+
+.add-edit-news-page textarea {
+    resize: vertical;
+    margin-left: 2%;
+}
+.add-edit-news-page input {
+    margin-left: 2%;
+}
+.add-edit-news-page h3 {
+    text-align: center;
+}
+.add-edit-news-page p,.add-edit-news-page button {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.fullNews {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 70%;
+    height: 100%;
+    background-color: aliceblue;
+    border: 1px solid rgba(173,193,197,0.85);
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.content {
+    font-size: large;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.author-date {
+    font-size: small;
+    margin-left: 2%;
+    font-style: italic;
+}
+.main-footer {
+    width: 100%;
+    height: 70px;
+    float: left;
+    margin-top: 2%;
+    position: relative;
+    clear: both;
+    background-color: #666;
+    border-radius: 4px;
+}
+
+.foot-info {
+    color: white;
+    float: right;
+    font-size: small;
+    margin-left: 2%;
+}
+
+.portal-link{
+    color: white;
+    float: right;
+    font-size: small;
+    margin-left: 2%;
+}
+
+.page-wrap:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page-wrap{
+    margin-bottom: -10px;
+   min-height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+
