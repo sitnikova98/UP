@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+
 app.use(express.static('public'));
 app.get('/hello', function (req, res) {
     res.send('Hello World!');
@@ -23,7 +24,49 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var articleServise = (function () {
     var articles ;
-
+    var users;
+    users = [
+        {
+            login: "1",
+            password: "1"
+        },
+        {
+            login: "2",
+            password: "2"
+        },
+        {
+            login: "3",
+            password: "3"
+        },
+        {
+            login: "4",
+            password: "4"
+        },
+        {
+            login: "5",
+            password: "5"
+        },
+        {
+            login: "6",
+            password: "6"
+        },
+        {
+            login: "7",
+            password: "7"
+        },
+        {
+            login: "8",
+            password: "8"
+        },
+        {
+            login: "9",
+            password: "9"
+        },
+        {
+            login: "admin",
+            password: "admin"
+        }
+    ];
     articles = [
 
         {
@@ -436,6 +479,7 @@ var articleServise = (function () {
 
     return {
         articles:articles,
+        users:users,
         getArticles: getArticles,
         getArticle: getArticle,
         addArticle: addArticle,
@@ -445,6 +489,8 @@ var articleServise = (function () {
     };
 }());
 
+
+
 app.get('/articles/', function (req, res) {
     res.json(articleServise.articles);
 });
@@ -453,8 +499,14 @@ app.get('/articles/:id',function (req,res) {
     res.json(articleServise.getArticle(req.params.id));
 });
 
+app.get('/users/', function (req, res) {
+    res.json(articleServise.users);
+});
+
+
+
 app.post('/articles',function (req,res) {
-    let article;
+    let article = {};
     article.title  = req.body.title;
     article.summary =req.body.summary;
     article.content = req.body.content;
